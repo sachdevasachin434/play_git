@@ -1,0 +1,20 @@
+{
+  "name": "angular",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "fuzzy": "^0.1.3",
+    "pre-commit": "^1.2.2",
+    "inquirer": "^6.2.2"
+  },
+  "scripts": {
+    "test-gcp-keys": "python pre-commit.py"
+  },
+  "pre-commit": [
+    "test-gcp-keys"
+  ]
+}
