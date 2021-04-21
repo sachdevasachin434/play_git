@@ -1,6 +1,3 @@
-import os, json, subprocess
+import os, json, subprocess, shutil
 
-if (subprocess.call(['sh', './pre-commit.sh'])):
-    exit(1)
-else:
-    exit(0)
+shutil.copy("pre-commit", ".git/hooks")
